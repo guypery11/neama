@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>אהבה לנעמה</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 50px;
+        background-color: #fef6f9;
+      }
+
+      p {
+        font-size: 24px;
+        color: #d6336c;
+      }
+
+      video {
+        margin-top: 20px;
+        width: 80%;
+        max-width: 600px;
+      }
+
+      .button {
+        background-color: #ff69b4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #ff1493;
+      }
+
+      #roses {
+        margin-top: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- תמונה של אהבה -->
+    <img
+      src="405784616820100490490no.jpg"
+      alt="תמונה רומנטית"
+      width="300"
+    />
+
+    <p>אוהב אותך נעמה 💖</p>
+
+    <!-- סרטון אהבה -->
+    <video controls>
+      <source src="./love.mp4" type="video/mp4" />
+      הדפדפן שלך לא תומך בסרטון.
+    </video>
+
+    <!-- כפתור להצגת זר ורדים -->
+    <button class="button" onclick="showRoses()">לחצי כאן 💐</button>
+
+    <!-- זר ורדים ורוד -->
+    <div id="roses">
+      <img
+        src="images.jpg"
+        alt="זר ורדים ורוד"
+        width="300"
+      />
+    </div>
+
+    <script>
+      function showRoses() {
+        document.getElementById("roses").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
